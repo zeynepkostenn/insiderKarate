@@ -1,0 +1,40 @@
+<testsuite failures="2" name="src/test/java/Features/PetStore.feature" skipped="0" tests="2" time="1.014535">
+  <testcase classname="src.test.java.Features.PetStore" name="Delete a pet" time="0.019157">
+    <failure message="PetStore.feature:107 - evaluation (js) failed: '/pet/' + id, javax.script.ScriptException: ReferenceError: &quot;id&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.scripting.nashorn/jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:469)">* def baseUrl = 'https://petstore.swagger.io/v2' .......................... passed
+Given url baseUrl ......................................................... passed
+And path '/pet/' + id ..................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: PetStore.feature:107 - evaluation (js) failed: '/pet/' + id, javax.script.ScriptException: ReferenceError: "id" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.scripting.nashorn/jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:469)
+	at ✽.And path '/pet/' + id (PetStore.feature:107)
+
+When method delete ........................................................ skipped
+Then status 200 ........................................................... skipped
+And match $.code == 200 ................................................... skipped</failure>
+  </testcase>
+  <testcase classname="src.test.java.Features.PetStore" name="Delete a pet" time="0.995378">
+    <failure message="PetStore.feature:118 - path: $, actual: null, expected: 'Pet not found', reason: actual value is not a string">* def baseUrl = 'https://petstore.swagger.io/v2' .......................... passed
+Given url baseUrl ......................................................... passed
+And path '/pet/' + id ..................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: PetStore.feature:107 - evaluation (js) failed: '/pet/' + id, javax.script.ScriptException: ReferenceError: "id" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.scripting.nashorn/jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:469)
+	at ✽.And path '/pet/' + id (PetStore.feature:107)
+
+When method delete ........................................................ skipped
+Then status 200 ........................................................... skipped
+And match $.code == 200 ................................................... skipped
+* def baseUrl = 'https://petstore.swagger.io/v2' .......................... passed
+Given url baseUrl ......................................................... passed
+And path '/pet/9223372036854597441' ....................................... passed
+When method delete ........................................................ passed
+Then status 404 ........................................................... passed
+And match response.message contains 'Pet not found' ....................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: PetStore.feature:118 - path: $, actual: null, expected: 'Pet not found', reason: actual value is not a string
+	at ✽.And match response.message contains 'Pet not found' (PetStore.feature:118)</failure>
+  </testcase>
+</testsuite>

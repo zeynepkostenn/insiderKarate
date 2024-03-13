@@ -1,0 +1,46 @@
+23:13:45.991 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+23:13:46.043 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+23:13:46.281 request:
+1 > DELETE https://petstore.swagger.io/v2/pet/9223372036854597441
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/10)
+
+23:13:47.022 response time in milliseconds: 741.03
+1 < 404
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Tue, 12 Mar 2024 20:13:47 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+
+23:13:47.040 assertion failed: path: $, actual: null, expected: 'Pet not found', reason: actual value is not a string
+ing: chunked
+{"id":9223372036854597970,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+
+23:11:56.186 [print] 9223372036854597970
+e>
+>
+iled, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 3; The element type "hr" must be terminated by the matching end-tag "</hr>".
+23:00:49.200 status code was: 404, expected: 200, response time: 767, url: https://petstore.swagger.io/v2, response: <html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+>
+
+></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+,"data":[{"code":"ARS","name":"Argentine Peso","rate":102.229099,"calculatedstr":"1022.29","calculated":1022.29},{"code":"AUD","name":"Australian Dollar","rate":1.384262,"calculatedstr":"13.84","calculated":13.84},{"code":"BHD","name":"Bahraini Dinar","rate":0.376,"calculatedstr":"3.76","calculated":3.76},{"code":"BWP","name":"Botswana Pula","rate":11.746284,"calculatedstr":"117.46","calculated":117.46},{"code":"BRL","name":"Brazilian Real","rate":5.67474,"calculatedstr":"56.75","calculated":56.75},{"code":"BND","name":"Bruneian Dollar","rate":1.35844,"calculatedstr":"13.58","calculated":13.58},{"code":"BGN","name":"Bulgarian Lev","rate":1.727574,"calculatedstr":"17.28","calculated":17.28},{"code":"CAD","name":"Canadian Dollar","rate":1.281217,"calculatedstr":"12.81","calculated":12.81},{"code":"CLP","name":"Chilean Peso","rate":864.295899,"calculatedstr":"8642.96","calculated":8642.96},{"code":"CNY","name":"Chinese Yuan Renminbi","rate":6.367545,"calculatedstr":"63.68","calculated":63.68},{"code":"COP","name":"Colombian Peso","rate":3993.117936,"calculatedstr":"39931.18","calculated":39931.18},{"code":"HRK","name":"Croatian Kuna","rate":6.636446,"calculatedstr":"66.36","calculated":66.36},{"code":"CZK","name":"Czech Koruna","rate":22.108593,"calculatedstr":"221.09","calculated":221.09},{"code":"DKK","name":"Danish Krone","rate":6.569486,"calculatedstr":"65.69","calculated":65.69},{"code":"EUR","name":"Euro","rate":0.883294,"calculatedstr":"8.83","calculated":8.83},{"code":"HKD","name":"Hong Kong Dollar","rate":7.799951,"calculatedstr":"78.00","calculated":78},{"code":"HUF","name":"Hungarian Forint","rate":326.142749,"calculatedstr":"3261.43","calculated":3261.43},{"code":"ISK","name":"Icelandic Krona","rate":130.056127,"calculatedstr":"1300.56","calculated":1300.56},{"code":"INR","name":"Indian Rupee","rate":75.107989,"calculatedstr":"751.08","calculated":751.08},{"code":"IDR","name":"Indonesian Rupiah","rate":14183.31468,"calculatedstr":"141833.15","calculated":141833.15},{"code":"IRR","name":"Iranian Rial","rate":42149.713097,"calculatedstr":"421497.13","calculated":421497.13},{"code":"ILS","name":"Israeli Shekel","rate":3.151747,"calculatedstr":"31.52","calculated":31.52},{"code":"JPY","name":"Japanese Yen","rate":114.395997,"calculatedstr":"1143.96","calculated":1143.96},{"code":"KZT","name":"Kazakhstani Tenge","rate":436.248985,"calculatedstr":"4362.49","calculated":4362.49},{"code":"KRW","name":"South Korean Won","rate":1187.039076,"calculatedstr":"11870.39","calculated":11870.39},{"code":"KWD","name":"Kuwaiti Dinar","rate":0.302598,"calculatedstr":"3.03","calculated":3.03},{"code":"LYD","name":"Libyan Dinar","rate":4.599643,"calculatedstr":"46.00","calculated":46},{"code":"MYR","name":"Malaysian Ringgit","rate":4.195516,"calculatedstr":"41.96","calculated":41.96},{"code":"MUR","name":"Mauritian Rupee","rate":43.660401,"calculatedstr":"436.60","calculated":436.6},{"code":"MXN","name":"Mexican Peso","rate":20.617647,"calculatedstr":"206.18","calculated":206.18},{"code":"NPR","name":"Nepalese Rupee","rate":120.229114,"calculatedstr":"1202.29","calculated":1202.29},{"code":"NZD","name":"New Zealand Dollar","rate":1.466566,"calculatedstr":"14.67","calculated":14.67},{"code":"NOK","name":"Norwegian Krone","rate":8.847857,"calculatedstr":"88.48","calculated":88.48},{"code":"OMR","name":"Omani Rial","rate":0.3845,"calculatedstr":"3.85","calculated":3.85},{"code":"PKR","name":"Pakistani Rupee","rate":178.184847,"calculatedstr":"1781.85","calculated":1781.85},{"code":"PHP","name":"Philippine Peso","rate":50.023692,"calculatedstr":"500.24","calculated":500.24},{"code":"PLN","name":"Polish Zloty","rate":4.080944,"calculatedstr":"40.81","calculated":40.81},{"code":"QAR","name":"Qatari Riyal","rate":3.64,"calculatedstr":"36.40","calculated":36.4},{"code":"RON","name":"Romanian New Leu","rate":4.372472,"calculatedstr":"43.72","calculated":43.72},{"code":"RUB","name":"Russian Ruble","rate":73.663039,"calculatedstr":"736.63","calculated":736.63},{"code":"SAR","name":"Saudi Arabian Riyal","rate":3.75,"calculatedstr":"37.50","calculated":37.5},{"code":"SGD","name":"Singapore Dollar","rate":1.35844,"calculatedstr":"13.58","calculated":13.58},{"code":"ZAR","name":"South African Rand","rate":15.579322,"calculatedstr":"155.79","calculated":155.79},{"code":"LKR","name":"Sri Lankan Rupee","rate":202.505256,"calculatedstr":"2025.05","calculated":2025.05},{"code":"SEK","name":"Swedish Krona","rate":9.122846,"calculatedstr":"91.23","calculated":91.23},{"code":"CHF","name":"Swiss Franc","rate":0.919003,"calculatedstr":"9.19","calculated":9.19},{"code":"TWD","name":"Taiwan New Dollar","rate":27.720825,"calculatedstr":"277.21","calculated":277.21},{"code":"THB","name":"Thai Baht","rate":33.414924,"calculatedstr":"334.15","calculated":334.15},{"code":"TTD","name":"Trinidadian Dollar","rate":6.788911,"calculatedstr":"67.89","calculated":67.89},{"code":"TRY","name":"Turkish Lira","rate":10.650502,"calculatedstr":"106.51","calculated":106.51},{"code":"AED","name":"Emirati Dirham","rate":3.6725,"calculatedstr":"36.73","calculated":36.73},{"code":"GBP","name":"British Pound","rate":0.746785,"calculatedstr":"7.47","calculated":7.47},{"code":"VES","name":"Venezuelan Bolivar","rate":457797.79441,"calculatedstr":"4577977.94","calculated":4577977.94}]}}
+
